@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/rep/!svn/ver/1448/cri/branch/DI/src
+END
+Production_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rep/!svn/ver/1397/cri/branch/DI/src/Production_en_US.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rep/!svn/ver/1421/cri/branch/DI/src/log4j.properties
+END
+Test_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rep/!svn/ver/1411/cri/branch/DI/src/Test_en_US.properties
+END
+Config_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rep/!svn/ver/1433/cri/branch/DI/src/Config_en_US.properties
+END

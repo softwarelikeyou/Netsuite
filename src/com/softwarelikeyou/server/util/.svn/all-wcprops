@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/rep/!svn/ver/1448/cri/branch/DI/src/com/softwarelikeyou/server/util
+END
+Helper.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/rep/!svn/ver/1356/cri/branch/DI/src/com/softwarelikeyou/server/util/Helper.java
+END
+ServerTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rep/!svn/ver/1331/cri/branch/DI/src/com/softwarelikeyou/server/util/ServerTool.java
+END
+EmailHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rep/!svn/ver/1448/cri/branch/DI/src/com/softwarelikeyou/server/util/EmailHelper.java
+END
+ClientTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rep/!svn/ver/1331/cri/branch/DI/src/com/softwarelikeyou/server/util/ClientTool.java
+END
+MappointHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rep/!svn/ver/1360/cri/branch/DI/src/com/softwarelikeyou/server/util/MappointHelper.java
+END

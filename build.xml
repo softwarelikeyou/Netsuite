@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<project name="DI" default="build" basedir=".">
+ <property name="build.sysclasspath" value="last" />
+ <property name="tomcat.server" value="192.168.0.252" />
+ <property name="user" value="tomcat" />
+ <property name="password" value="7134443489" />
+ <property name="tomcat.base" value="/opt/tomcat-5.5" />
+ <property name="war.file" value="DI" />
+
+ <path id="project.class.path">
+  <pathelement location="war/WEB-INF/classes"/>
+  <!-- Add any additional non-server libs (such as JUnit) -->
+  <fileset dir="war/WEB-INF/lib" includes="**/*.jar"/>
+ </path>
+
+ <target name="javac" description="Compile java source">
+  <mkdir dir="war/WEB-INF/classes"/>
+  <javac srcdir="src" includes="**" encoding="utf-8"
+   destdir="war/WEB-INF/classes"
+   source="1.5" target="1.5" nowarn="true"
+   debug="true" debuglevel="lines,vars,source">
+   <classpath refid="project.class.path"/>
+  </javac>
+  <copy todir="war/WEB-INF/classes">
+   <fileset dir="src" excludes="**/*.java"/>
+  </copy>
+ </target>
+
+ <target name="build" depends="javac" description="Build this project" />
+	
+ <target name="war" depends="build" description="Create a war file">
+  <delete file="${war.file}.war" failonerror="false" />
+  <zip destfile="${war.file}.war" basedir="war"/>
+ </target>
+
+ <target name="deploy" depends="war" description="Create war file">
+  <scp file="${war.file}.war" 
+       remoteTofile="${user}@${tomcat.server}:${tomcat.base}/webapps/${war.file}.war" 
+  	   password="${password}" 
+  	   trust="true" />	
+ </target>
+
+ <target name="undeploy" description="Removes webapp">
+  <sshexec host="${tomcat.server}"
+ 	       username="${user}"
+ 	       password="${password}"
+  	       trust="true"
+ 	       command="rm -rf ${tomcat.base}/webapps/${war.file}.war" />
+ </target>
+	
+ <target name="stop" description="Stop Tomcat">
+  <sshexec host="${tomcat.server}"
+	 	   trust="true"
+	  	   username="${user}"
+		   password="${password}"
+		   command="sudo /etc/init.d/tomcat stop -force" />
+  <sshexec host="${tomcat.server}"
+ 		   trust="true"
+ 		   username="${user}"
+ 		   password="${password}"
+ 		   command="rm -rf ${tomcat.base}/logs/*.*" />
+ </target>
+	
+ <target name="start" description="Start Tomcat">
+  <sshexec host="${tomcat.server}"
+	 	   trust="true"
+ 	       username="${user}"
+	 	   password="${password}"
+	 	   command="sudo /etc/init.d/tomcat start" />
+ </target>
+	
+ <target name="clean" description="Cleans this project">
+  <delete dir="war/WEB-INF/classes" failonerror="false" />
+ </target>
+
+ <target name="help">
+  <echo>
+   Usage: 
+    ant build: Build this project 
+    ant war: Create a war file
+    ant clean: Cleans this project
+  	ant deploy: Deploy WAR file to Tomcat
+  	ant undeploy: Undeploy WAR file from Tomcat
+	ant stop: Stop Tomcat
+ 	ant start: Start Tomcat
+  </echo>
+ </target>
+
+</project>

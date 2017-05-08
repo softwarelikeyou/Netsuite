@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/rep/!svn/ver/1380/cri/branch/DI/src/com/softwarelikeyou/server/netsuite
+END
+CustomRecordHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rep/!svn/ver/1331/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/CustomRecordHelper.java
+END
+ContactHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rep/!svn/ver/1331/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/ContactHelper.java
+END
+CustomerHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rep/!svn/ver/1362/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/CustomerHelper.java
+END
+NetSuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rep/!svn/ver/1362/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/NetSuite.java
+END
+NetSuiteHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rep/!svn/ver/1362/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/NetSuiteHelper.java
+END
+HPDIFileHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rep/!svn/ver/1356/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/HPDIFileHelper.java
+END
+NetSuiteProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rep/!svn/ver/1365/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/NetSuiteProxy.java
+END
+NetSuiteProxyHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/rep/!svn/ver/1380/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/NetSuiteProxyHelper.java
+END
+OpportunityHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/rep/!svn/ver/1362/cri/branch/DI/src/com/softwarelikeyou/server/netsuite/OpportunityHelper.java
+END
