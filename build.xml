@@ -4,9 +4,9 @@
  <property name="build.sysclasspath" value="last" />
  <property name="tomcat.server" value="192.168.0.252" />
  <property name="user" value="tomcat" />
- <property name="password" value="7134443489" />
+ <property name="password" value="" />
  <property name="tomcat.base" value="/opt/tomcat-5.5" />
- <property name="war.file" value="DI" />
+ <property name="war.file" value="NetSuite" />
 
  <path id="project.class.path">
   <pathelement location="war/WEB-INF/classes"/>
