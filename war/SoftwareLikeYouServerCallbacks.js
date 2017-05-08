@@ -287,6 +287,6 @@ function modifyOpportunityCallback()
 	
 	function responseHandler(response)
 	{
-		alert("Hello");
+		alert("Hello World");
 	}
 }
